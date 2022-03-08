@@ -12,6 +12,10 @@ export function draw(gameBoard) {
     gameBoard.appendChild(snakeElement)
   })
 }
+export function snakeIntersection() {
+  return onSnake(snakeBody[0], { ignoreHead: true })
+}
+
 // Function to add segments to the snake
 function addSegments() {
   for (let i = 0; i < newSegments; i++) {
