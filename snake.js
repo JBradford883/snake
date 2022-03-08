@@ -12,3 +12,11 @@ export function draw(gameBoard) {
     gameBoard.appendChild(snakeElement)
   })
 }
+// Function to add segments to the snake
+function addSegments() {
+  for (let i = 0; i < newSegments; i++) {
+    snakeBody.push({ ...snakeBody[snakeBody.length - 1] })
+  }
+
+  newSegments = 0
+}
