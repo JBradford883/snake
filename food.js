@@ -1,3 +1,4 @@
+const EXPANSION_RATE = 5
 function getRandomFoodPosition() {
   let newFoodPosition
   while (newFoodPosition == null || onSnake(newFoodPosition)) {
